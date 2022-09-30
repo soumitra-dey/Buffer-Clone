@@ -17,3 +17,6 @@
     width: 10px;
     left: 45%;
 }
+.btn:hover{
+    color:rgb(61, 89, 255);
+}
