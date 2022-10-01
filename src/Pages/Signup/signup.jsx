@@ -90,12 +90,15 @@ function Signup(){
 
         if (firstcheck && secondcheck && thirdcheck && chemail) {
             setdis(false)
+        } else {
+            setdis(true)
         }
 
 
     },[pass,email])
 
-    const signup=()=>{
+    let signup = async()=>{
+
         
     }
 
@@ -114,6 +117,7 @@ function Signup(){
                             type={show ? 'text' : 'password'}
                             onClick={checkon}
                             onChange={checkpassword}
+                            onFocus={checkon}
                         />
                         <InputRightElement width='4.5rem'>
                             <Button h='1.75rem' size='sm' onClick={handleClick}>
@@ -131,7 +135,7 @@ function Signup(){
                     <Button size='lg' w="md" mt="10px" bg="rgb(44,75,255)" color="white" _hover={{bg:"rgb(31, 53, 179)"}} disabled={dis} onClick={signup}>Sign Up</Button>
                 </Flex>
                 <Flex ml={{base:"7%", lg:"20%"}} w="md" justifyContent="space-between" fontSize="14px" mt="10px" as="b" color="rgb(152, 152, 152)">
-                    <Text>I agree<Link color="blue.500"> Buffer's Terms of Service</Link></Text>
+                    <Text>I agree <Link color="blue.500">Buffer's Terms of Service</Link></Text>
                     <Link>Already have an account?</Link>
                 </Flex>
             </Box>

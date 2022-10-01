@@ -3,6 +3,7 @@ import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/home';
 import Signup from './Pages/Signup/signup';
+import Login from './Pages/Login/login';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <Footer/> */}
       <Signup/>
+      {/* <Login/> */}
     </div>
   );
 }
