@@ -70,7 +70,7 @@ function Final(){
                     </Menu>
                     <Menu>
                         <MenuButton>
-                            {loginuser}
+                            {loginuser}<TriangleDownIcon />
                         </MenuButton>
                         <MenuList>
                             <MenuItem>Account</MenuItem>
