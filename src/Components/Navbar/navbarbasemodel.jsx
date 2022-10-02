@@ -2,6 +2,8 @@ import { Box, Flex, Image, Text, Accordion, AccordionItem, AccordionButton, Acco
 import {CloseIcon} from "@chakra-ui/icons"
 import {useState} from "react"
 import {HamburgerIcon} from "@chakra-ui/icons"
+import {Link} from "react-router-dom"
+
 
 
 
@@ -70,7 +72,7 @@ function Navbarbasemodel(){
                 <Text>About</Text>
                 <Text>Customers</Text>
                 <Button bg="rgb(233, 114, 132)" w="fit-content" fontSize="20px" p="20px" mb="15px">Get started now</Button>
-                <Text>Log in</Text>
+                <Text><Link to="/login">Log in</Link></Text>
                 </Flex>
 
             </Box>

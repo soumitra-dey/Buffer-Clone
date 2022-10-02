@@ -1,19 +1,11 @@
 import './App.css';
-import Footer from './Components/Footer/Footer';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './Pages/Home/home';
-import Signup from './Pages/Signup/signup';
-import Login from './Pages/Login/login';
+import Allroutes from './Pages/Allroute';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/>
-      <Home/>
-      <Footer/> */}
-      <Signup/>
-      {/* <Login/> */}
+      <Allroutes/>
     </div>
   );
 }
