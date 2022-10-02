@@ -19,4 +19,5 @@
 }
 .btn:hover{
     color:rgb(61, 89, 255);
+    cursor: pointer;
 }
