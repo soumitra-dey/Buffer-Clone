@@ -17,12 +17,12 @@ function Navbar(){
 
 
     useEffect(()=>{
-        axios.get('https://api.bigdatacloud.net/data/ip-geolocation-full?key=d9e53816d07345139c58d0ea733e3870')
+        axios.get('https://api.bigdatacloud.net/data/ip-geolocation-full?key=8bfcc8157b9c41268853818fadb04f76')
         .then((res)=>setipadd(res.data.ip))
     },[])
 
     function gotopage(){
-        axios.get(`https://buffer-data-server.herokuapp.com/data`)
+        axios.get(`https://lively-gray-bathing-suit.cyclic.app/data`)
         .then((res)=>
         {   let fl=0;
             for (let i=0;i<res.data.length;i++) {

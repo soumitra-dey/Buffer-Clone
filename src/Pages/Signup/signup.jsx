@@ -106,14 +106,14 @@ function Signup(){
             setdis(true)
         }
 
-        axios.get('https://api.bigdatacloud.net/data/ip-geolocation-full?key=d9e53816d07345139c58d0ea733e3870')
+        axios.get('https://api.bigdatacloud.net/data/ip-geolocation-full?key=8bfcc8157b9c41268853818fadb04f76')
         .then((res)=>setipadd(res.data.ip))
 
     },[pass,email])
     
     function signup(){
         setbtnloading(true)
-        axios.get(`https://buffer-data-server.herokuapp.com/logindata`)
+        axios.get(`https://lively-gray-bathing-suit.cyclic.app/logindata`)
         .then((res)=>
         {   let fl=0;
             for (let i=0;i<res.data.length;i++) {
@@ -140,14 +140,14 @@ function Signup(){
             password:pass,
         }
 
-        axios.post(`https://buffer-data-server.herokuapp.com/logindata`, logindata)
+        axios.post(`https://lively-gray-bathing-suit.cyclic.app/logindata`, logindata)
 
         let ipdata={
             ip:ipadd,
             status:true,
             email:email,
         }
-        axios.post(`https://buffer-data-server.herokuapp.com/data`,ipdata)
+        axios.post(`https://lively-gray-bathing-suit.cyclic.app/data`,ipdata)
         setloginuser(email)
         navigate("/welcome")
 
