@@ -49,7 +49,7 @@ function Navbar(){
             </Center>
             <NavbarLgModel/>
             <Flex gap="15px">
-                <Text display={{base:"none",lg:"flex"}} color="rgb(77, 103, 255)" cursor="pointer" fontSize='xl' className="loginbtn" onClick={gotopage}>Log in</Text>
+                <Button display={{base:"none",lg:"flex"}} color="rgb(44,75,255)" bg="white" border="1px solid rgb(44,75,255)" _hover={{bg:"rgb(214, 219, 252)"}} padding="20px 20px" w="fit-content" fontSize='xl' className="loginbtn" onClick={gotopage}>Log in</Button>
                 <Button color="white" bg="rgb(44,75,255)" fontSize={{base:".7rem", lg:"xl"}} p="15px" _hover={{bg:"rgb(31, 53, 179)"}}>Get started now</Button>
                 <Navbarbasemodel/>
             </Flex>           
